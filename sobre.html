@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diavola Pizza</title>
+  <link rel="stylesheet" href="estilo2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="imagenes/logo.png" alt="imagen del logo" class="logo">
+  </header>
+
+  <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Menú</a></li>
+      <li><a href="sobre.html">Sobre nosotros</a></li>
+      <li><a href="reser.html">Reservaciones</a></li>
+      <li><a href="cont.html">Contáctanos</a></li>
+    </ul>
+  </nav>
+
+  <div class="cuerpo">
+    
+  </div>
+  <section class="sobre-nosotros">
+    <h2 class="titulo-seccion">Sobre Nosotros</h2>
+    <div class="sobre-nosotros-contenido">
+      <p class="texto-descriptivo">
+        Bienvenido a Diavola, la pizzería donde cada mordida es una historia y cada historia tiene su toque picante.<br><br>
+        Nuestra historia comienza en 1963, en una pequeña esquina de Brooklyn, cuando Salvatore "Toto" Romano, un hombre con pasado turbulento y manos de oro para la cocina, decidió dejar atrás los viejos negocios de "la familia" para comenzar algo nuevo. Inspirado por las recetas de su nonna en Calabria y por el espíritu indomable de Nueva York, Salvatore abrió las puertas de Diavola, una pizzería que pronto se convertiría en leyenda del vecindario.<br><br>
+        Desde sus inicios, Diavola no fue cualquier pizzería. Era un lugar donde se cerraban tratos, se compartían secretos, y donde un buen espresso podía arreglar cualquier malentendido. Los muros han escuchado más historias de las que se podrían contar… y la pizza, siempre servida caliente, era el centro de todo. La especialidad de la casa, la “Diavola”, con su salami picante y un toque de aceite de chile rojo, se volvió famosa por tener tanto carácter como su fundador.<br><br>
+        Hoy, más de seis décadas después, seguimos cocinando con el mismo fuego y la misma pasión que tenía Don Salvatore. Nuestra masa fermenta lentamente como los buenos planes, nuestras salsas se cocinan con calma, y cada ingrediente es elegido con el ojo de alguien que ha visto de todo. Porque en Diavola, la tradición no es un eslogan —es una promesa.<br><br>
+        Seguimos siendo un rincón donde se honra la vieja escuela: la pizza se sirve con respeto, el vino se comparte entre amigos, y siéntete libre de imaginar que en la mesa de la esquina alguien sigue hablando en voz baja sobre "asuntos importantes".<br><br>
+        <strong>Diavola — Una oferta que tu paladar no podrá rechazar.</strong>
+      </p>
+  
+      <div class="grid-sobre-nosotros">
+        <div class="bloque">
+          <img src="imagenes/_0cccd056-9636-49ea-9496-b783bb9c0bfc.jpeg" alt="Interior 1">
+        </div>
+        <div class="bloque">
+          <img src="imagenes/_77428a8c-f00b-4f02-a8d3-2c8bbbafb107.jpeg" alt="Interior 2">
+        </div>
+        <div class="bloque">
+          <img src="imagenes/_abbd4f85-ec5e-44f1-8d00-16fdafa55195.jpeg" alt="Interior 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Diavola Pizza by Los Perejiles. Todos los derechos reservados.</p>
+  </footer>
+  
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

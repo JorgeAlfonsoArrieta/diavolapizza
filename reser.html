@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diavola Pizza</title>
+  <link rel="stylesheet" href="estilo4.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+</head>
+<body>                                                       
+  <header>
+    <img src="imagenes/logo.png" alt="imagen del logo" class="logo">
+  </header>
+
+  <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Menú</a></li>
+      <li><a href="sobre.html">Sobre nosotros</a></li>
+      <li><a href="reser.html">Reservaciones</a></li>
+      <li><a href="cont.html">Contáctanos</a></li>
+    </ul>
+  </nav>
+
+  <div class="cuerpo">
+    <div class="fondo">
+      <img src="imagenes/Image (7).png" alt="imagen d pizza" class="imgpizza">
+    <h2>Formulario de Reservación</h2>
+<form class="Formulario">
+<label for="nombre">Nombre:</label><br>
+<input type="text" id="nombre" name="nombre" required><br><br>
+<label for="email">Correo electrónico:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+<label for="telefono">Teléfono:</label><br>
+<input type="tel" id="telefono" name="telefono" required><br><br>
+<label for="fecha">Fecha:</label><br>
+<input type="date" id="fecha" name="fecha" required><br><br>
+<label for="hora">Hora:</label><br>
+<input type="time" id="hora" name="hora" required><br><br>
+<label for="personas">Número de personas:</label><br>
+<input type="number" id="personas" name="personas" min="1" required><br><br>
+<label for="peticion">Petición especial:</label><br>
+<textarea id="peticion" name="peticion" rows="4" cols="30"></textarea><br><br>
+<button type="submit">Reservar</button>
+</form>
+</div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Diavola Pizza by Los Perejiles. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

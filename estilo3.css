@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0D0D0D;
+  font-family: 'Georgia', serif;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #0D0D0D;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #D9A441;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-family: "Federo", sans-serif;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+}
+
+.nav-links li a:hover {
+  background-color: #594225;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.cuerpo, .cuerpo2 {
+  flex: 1;
+  background-image: url("imagenes/fondo pirateado.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Federo", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 18px;
+}
+
+.tema {
+  width: 90%;
+  height: auto;
+  background-color: #D9A441;
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.tema2 {
+  width: 80%;
+  height: auto;
+
+  background-color: #D9A441;
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+
+.info, .info2 {
+  
+  float: left;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.info {
+  background-color: #0D0D0D;
+  width: 90%;
+  
+}
+
+.info2 {
+  background-color: #0D0D0D;
+  width: 90%;
+}
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.slides img {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: none;
+  background-color: #594225;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #D9A441;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  
+}
+
+.contenedor a img {
+  width: 100%;
+  
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  
+}
+
+.contenedor a img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #594225;
+  color: white;
+  font-family: "Federo", sans-serif;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+
+@media (max-width: 480px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #D9A441;
+    width: 100%;
+    display: none;
+    z-index: 10;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: left;
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 12px;
+    width: 100%;
+  }
+  
+  .contenedor a img {
+        width: 100%;
+        border-radius: 0px;
+        height: auto;
+    }
+}
+
+@media (max-width: 720px) {
+  .contenedor {
+      flex-direction: column;
+      align-items: center;
+  }
+  .contenedor a img {
+      width: 80%;
+      height: auto;
+  }
+}
+@font-face {
+  font-family: hazel;
+  src: url(hazel.ttf);
+}
+h2 ,a{
+  font-family: hazel;
+}
+ 
+    
+
